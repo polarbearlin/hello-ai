@@ -1,24 +1,6 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/next"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/"
-    }
-  ],
   "framework": "nextjs",
   "buildCommand": "npm run build",
   "outputDirectory": ".next",
-  "env": {
-    "SHEET_CSV_URL": "@sheet_csv_url",
-    "REVALIDATE_TOKEN": "@revalidate_token",
-    "REDIS_URL": "@redis_url",
-    "REDIS_TOKEN": "@redis_token"
-  }
+  "env": {}
 }
